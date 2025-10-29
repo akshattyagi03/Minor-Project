@@ -29,11 +29,7 @@ const PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:5173",
-      "https://minor-project-olive.vercel.app",
-      /https:\/\/.*\.vercel\.app$/
-    ],
+    origin: true,
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",
