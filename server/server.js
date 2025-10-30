@@ -31,7 +31,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://minor-project-olive.vercel.app"
+      "https://minor-project-olive.vercel.app",
+      /https:\/\/minor-project-.*\.vercel\.app$/
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
