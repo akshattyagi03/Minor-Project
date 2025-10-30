@@ -70,7 +70,7 @@ const createOrder = async (req, res) => {
 
     res.status(201).json({
       success: true,
-      approvalURL: "http://localhost:5173/shop/payment-success",
+      approvalURL: "https://minor-project-olive.vercel.app/shop/payment-success",
       orderId: newlyCreatedOrder._id,
     });
   } catch (e) {
