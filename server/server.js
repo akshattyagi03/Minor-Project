@@ -61,4 +61,7 @@ app.use("/api/shop/review", shopReviewRouter);
 
 app.use("/api/common/feature", commonFeatureRouter);
 
+// Handle favicon requests
+app.get('/favicon.ico', (req, res) => res.status(204).end());
+
 app.listen(PORT, () => console.log(`Server is now running on port ${PORT}`));
